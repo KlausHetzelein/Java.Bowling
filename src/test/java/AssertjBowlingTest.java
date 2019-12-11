@@ -37,6 +37,7 @@ public class AssertjBowlingTest
         }).hasMessage("boom!");
 
         // ... or BDD style
+        @SuppressWarnings("unused")
         final Throwable thrown = catchThrowable(() -> {
             throw new Exception("boom!");
         });
